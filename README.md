@@ -1,6 +1,8 @@
-# Adaptive AI Foundation v1
+# Newbrid
 
-A stack-agnostic, declarative starter for AI-first software projects. It gives coding agents a compact set of project rules and reusable guidance for applying the right amount of engineering process to each task.
+**Adaptive engineering for AI-first development.**
+
+Newbrid is a stack-agnostic, declarative foundation for software projects. It gives coding agents a compact set of project rules and reusable guidance for applying the right amount of engineering process to each task.
 
 ## What it provides
 
