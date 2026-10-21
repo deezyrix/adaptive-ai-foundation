@@ -1,0 +1,43 @@
+modes:
+  FAST:
+    use_for:
+      - small localized fixes
+      - simple utilities
+      - low-risk mechanical changes
+    persistent_task_state: false
+    worktree: optional
+    independent_review: false
+    planning: minimal
+  NORMAL:
+    use_for:
+      - ordinary features
+      - moderate refactors
+      - tasks spanning several files
+    persistent_task_state: conditional
+    worktree: preferred
+    independent_review: risk_based
+    planning: short
+  DEEP:
+    use_for:
+      - architecture changes
+      - large refactors
+      - high uncertainty
+      - multiple independent workstreams
+      - high blast radius
+    persistent_task_state: true
+    worktree: preferred
+    independent_review: preferred
+    planning: explicit
+
+routing:
+  start_with_cheapest_sufficient_process: true
+  allow_escalation: true
+  allow_deescalation: true
+  model_choice: orchestrator
+  agent_count: orchestrator
+  optimize_token_cost: true
+  hard_token_budget: false
+
+merge:
+  orchestrator_may_merge_when_verified: true
+  require_user_approval_by_default: false

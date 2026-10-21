@@ -1,0 +1,21 @@
+context:
+  lazy_loading: true
+  read_entire_repo_by_default: false
+  bootstrap_files:
+    - AGENTS.md
+    - .ai/policy.md
+    - .ai/project-map.md
+    - .ai/project-state.md
+  git_history:
+    default: relevant_only
+  human_guide:
+    load_by_default: false
+  web_research:
+    allowed: true
+    prefer_authoritative_sources: true
+    use_when:
+      - unfamiliar library or API
+      - version-sensitive behavior
+      - obscure format or protocol
+      - unexpected runtime behavior
+      - model uncertainty

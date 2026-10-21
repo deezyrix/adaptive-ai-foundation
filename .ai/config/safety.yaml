@@ -1,0 +1,25 @@
+approval_required:
+  - use_of_secrets_or_credentials
+  - paid_external_actions
+  - production_deployment
+  - irreversible_data_deletion
+  - dangerous_database_migration
+  - external_infrastructure_change
+  - material_security_sensitive_action
+
+secrets:
+  never_store_in:
+    - source_code
+    - git
+    - project_docs
+    - agent_memory
+    - prompts
+    - logs
+
+autonomous_allowed:
+  - local_reversible_code_changes
+  - dependency_updates_when_justified
+  - branches_and_worktrees
+  - local_refactors
+  - local_builds_and_checks
+  - rollback_of_own_changes
