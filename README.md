@@ -1,33 +1,18 @@
-# Adaptive AI Development Foundation v1
+# Adaptive AI Foundation v1
 
-A stack-agnostic starter repository for AI-first software development.
+A stack-agnostic, declarative starter for AI-first software projects. It gives coding agents a compact set of project rules and reusable guidance for applying the right amount of engineering process to each task.
 
-## Core idea
+## What it provides
 
-You describe intent in normal language. The orchestrator chooses the lightest safe process:
-FAST, NORMAL, or DEEP.
+- **Adaptive workflow:** choose FAST, NORMAL, or DEEP based on task complexity and risk.
+- **Lean context:** load only the project map, state, decisions, and files relevant to the task.
+- **Engineering guardrails:** minimal implementation, proportional verification, Git practices, and clear safety boundaries.
+- **Reusable guidance:** policies, YAML configuration, task skills, and a human-oriented project guide.
 
-Priorities:
-1. Minimize user involvement.
-2. Minimize unnecessary token/context usage.
-3. Preserve practical reliability.
-4. Optimize speed after the first three.
+## Get started
 
-## Start
+1. Copy the foundation into a new project and initialize Git.
+2. Open the project in a coding agent that reads repository instructions.
+3. Ask the agent to read `AGENTS.md`, then describe the outcome you want.
 
-1. Initialize Git in this directory.
-2. Give your coding agent access to the repository.
-3. Tell it to read `AGENTS.md`.
-4. Describe the software you want to build in normal language.
-
-The foundation is intentionally stack-neutral. The stack is chosen per project.
-
-## Core rules
-
-- Load context lazily.
-- Prefer existing code/platform/library capabilities before adding new code.
-- Use branches/worktrees when risk or parallelism justifies them.
-- Verify real behavior before declaring work complete.
-- Update durable documentation only when durable knowledge changed.
-- Keep human-facing explanations simple and technical agent memory compact.
-- Escalate genuine dead ends instead of hiding them with hacks.
+**Scope:** v1 is a portable instruction and configuration layer, not an executable orchestration runtime. A coding agent or runtime must read and apply its guidance. The foundation is designed to work across project stacks.
